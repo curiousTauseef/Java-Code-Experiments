@@ -1,2 +1,2 @@
 # Java-Code-Experiments
-A selection of Java programs
+A selection of J
