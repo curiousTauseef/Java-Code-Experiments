@@ -6,7 +6,7 @@ public class RevertInteger {
 
     public static void main(String args[]) {
         int givenInt = -234580934;
-        int output = RevertInteger.revertInteger(givenInt);
+        int output = revertInteger(givenInt);
         System.out.println("Given " + givenInt + " This is the reverted version " + output);
 
     }
@@ -24,14 +24,10 @@ public class RevertInteger {
             lastDigit = number % 10; //with this you can obtain the last digit of the number
             reverse = reverse * 10 + lastDigit;
             number = number / 10; //Now we can get rid of the last digit
+
         }
 
-        if (number == Integer.MAX_VALUE) {
-            return 0;
-        } else {
-
-            return isNegative == true ? reverse * -1 : reverse;
-        }
+        return isNegative == true ? reverse * -1 : reverse;
 
     }
 
