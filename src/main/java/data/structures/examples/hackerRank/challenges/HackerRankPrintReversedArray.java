@@ -1,4 +1,4 @@
-package data.structures.examples;
+package data.structures.examples.hackerRank.challenges;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class HackerRankPrintReversedArray {
         for (int i = 0; i < n; i++) {
             arr[i] = in.nextInt();
         }
-        printReversed(arr);
+        HackerRankPrintReversedArray.printReversed(arr);
     }
 
     private static void printReversed(int inputArray[]) {

@@ -1,4 +1,4 @@
-package data.structures.examples;
+package data.structures.examples.hackerRank.challenges;
 
 /**
  * @author ilariacorda on 09/07/2017.
@@ -7,13 +7,13 @@ package data.structures.examples;
  */
 public class HackerRankDeleteNodeLinkedList {
 
-    HackerRankDeleteNodeLinkedList.Node Delete(HackerRankDeleteNodeLinkedList.Node head, int position) {
+    Node Delete(Node head, int position) {
         if (position == 0) {
             return head.next;
         }
 
-        HackerRankDeleteNodeLinkedList.Node currentNode = head;
-        HackerRankDeleteNodeLinkedList.Node previousNode = head;
+        Node currentNode = head;
+        Node previousNode = head;
         for (int i = 0; i < position; i++) {
             previousNode = currentNode;
             if (currentNode.next == null) {
@@ -28,6 +28,6 @@ public class HackerRankDeleteNodeLinkedList {
 
     class Node {
         int data;
-        HackerRankDeleteNodeLinkedList.Node next;
+        Node next;
     }
 }
