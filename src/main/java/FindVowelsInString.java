@@ -9,12 +9,16 @@ public class FindVowelsInString {
 
     public static void main(String[] args) {
 
+        String str = "hello";
+        char[] array = str.toCharArray();
+
+
         //Check with a consonant
-        boolean vowelChecker = FindVowelsInString.isVowel('l');
+        boolean vowelChecker = FindVowelsInString.isVowel(array[0]);
         System.out.println("Is this a character a vowel?" + vowelChecker);
 
         //Check with a vowel
-        boolean vowelChecker2 = FindVowelsInString.isVowel('a');
+        boolean vowelChecker2 = FindVowelsInString.isVowel(array[1]);
         System.out.println("Is this a character a vowel?" + vowelChecker2);
 
     }
