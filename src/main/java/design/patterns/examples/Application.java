@@ -14,13 +14,13 @@ public class Application {
 
             @Override
             public void run() {
-                Application.runApp();
+                Application.runApplication();
             }
 
         });
     }
 
-    public static void runApp() {
+    public static void runApplication() {
         Model model = new Model();
         View view = new View(model);
 
