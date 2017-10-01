@@ -14,26 +14,24 @@ public class Calculator {
 
     public BigDecimal getAccumulator() {
         //return the most recent inserted element in the stack
-        if (this.values.size() == 0) {
+        if (values.size() == 0) {
             return BigDecimal.ZERO;
         }
-        return this.values.peek();
+        return values.peek();
 
     }
 
     public void setAccumulator(BigDecimal value) {
         //it returns the element on the top of the stack without removing it
-        if (this.values.size() > 0)
-            this.values.pop();
+        if (values.size() > 0)
+            values.pop();
         // it pushes the element onto the stack
-        this.values.push(value);
+        values.push(value);
     }
 
-    public void enter() {
-        this.values.push(this.getAccumulator());
+    public void enter() {values.push(getAccumulator());
     }
 
-    public void drop() {
-        this.values.pop();
+    public void drop() {values.pop();
     }
 }

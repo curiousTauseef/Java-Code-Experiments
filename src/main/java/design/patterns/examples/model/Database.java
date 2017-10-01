@@ -41,7 +41,7 @@ public class Database {
 
         String url = String.format("jdbc:mysql://localhost:%d/patterns", 3306);
 
-        this.con = DriverManager.getConnection(url, "user", "letmein");
+        this.con = DriverManager.getConnection(url, "root", "QkQb=Fskq6BQ");
     }
 
     public void disconnect() {

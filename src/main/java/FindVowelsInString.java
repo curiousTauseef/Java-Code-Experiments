@@ -12,7 +12,6 @@ public class FindVowelsInString {
         String str = "hello";
         char[] array = str.toCharArray();
 
-
         //Check with a consonant
         boolean vowelChecker = FindVowelsInString.isVowel(array[0]);
         System.out.println("Is this a character a vowel?" + vowelChecker);
@@ -28,7 +27,6 @@ public class FindVowelsInString {
         for (int i = 0; i < FindVowelsInString.getVowel().length; i++) {
             if (FindVowelsInString.getVowel()[i] == vowel) {
                 isVowel = true;
-                break;
             }
         }
         return isVowel;

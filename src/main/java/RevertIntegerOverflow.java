@@ -25,7 +25,13 @@ public class RevertIntegerOverflow {
     public static int reverse(int number) {
         // use
         long result = 0L;
-        while (number != 0) {
+
+        boolean isNegative = number < 0;
+        //If negative we first multiply by -1 to make it positive
+        if (isNegative) {
+            number = number * -1;
+        }
+        while (number >= 1) {
             result = result * 10 + (number % 10);
             number = number / 10;
         }

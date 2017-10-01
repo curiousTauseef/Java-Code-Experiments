@@ -28,4 +28,4 @@ public class BinaryGap {
         return binaryGap;
     }
 }
-}
+

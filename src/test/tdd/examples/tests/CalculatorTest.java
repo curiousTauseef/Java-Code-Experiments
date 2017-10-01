@@ -37,22 +37,4 @@ public class CalculatorTest {
         assertEquals(this.value, this.calculator.getAccumulator());
     }
 
-    @Test
-    public void testEnteringAndDroppingCalculatorValues() {
-        this.value = new BigDecimal(12);
-        BigDecimal value1 = new BigDecimal(22);
-        BigDecimal value2 = new BigDecimal(52);
-        this.calculator.setAccumulator(this.value);
-        this.calculator.enter();
-        this.calculator.setAccumulator(value1);
-        this.calculator.enter();
-        this.calculator.setAccumulator(value2);
-        this.calculator.enter();
-        assertEquals(value2, this.calculator.getAccumulator());
-        this.calculator.drop();
-        assertEquals(value1, this.calculator.getAccumulator());
-        this.calculator.drop();
-        assertEquals(this.value, this.calculator.getAccumulator());
-
-    }
 }

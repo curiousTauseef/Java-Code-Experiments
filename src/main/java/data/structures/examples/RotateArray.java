@@ -14,7 +14,7 @@ public class RotateArray {
         myArray[3] = 7;
         myArray[4] = 6;
 
-        int[] resultArray = rotateArray(myArray, 3);
+        int[] resultArray = rotateArray(myArray, 2);
         for (int i = 0; i < myArray.length; i++) {
 
             System.out.println("current element of the initial array is : " + myArray[i]);
