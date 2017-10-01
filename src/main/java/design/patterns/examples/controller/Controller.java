@@ -7,9 +7,14 @@ import design.patterns.examples.view.LoginListener;
 import design.patterns.examples.view.View;
 
 public class Controller implements LoginListener {
+	@SuppressWarnings("unused")
 	private View view;
+	@SuppressWarnings("unused")
 	private Model model;
 	
+	/*
+	 * We need to pass both the view and the model in the constructor
+	 */
 	public Controller(View view, Model model) {
 		this.view = view;
 		this.model = model;
