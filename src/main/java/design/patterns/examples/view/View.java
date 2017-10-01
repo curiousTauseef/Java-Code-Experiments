@@ -14,6 +14,7 @@ import java.awt.event.WindowEvent;
 
 public class View extends JFrame implements ActionListener {
 
+	@SuppressWarnings("unused")
 	private Model model;
 	private JButton okButton;
 	private JTextField nameField;
@@ -22,8 +23,12 @@ public class View extends JFrame implements ActionListener {
 
 	private LoginListener loginListener;
 
+	/*
+	 * We need to pass a reference to the model in the constructor
+	 */
+	
 	public View(Model model) {
-		super("MVC Demo");
+		super("My MVC Demo");
 
 		this.model = model;
 
