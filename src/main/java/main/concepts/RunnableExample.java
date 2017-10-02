@@ -4,7 +4,7 @@ package main.concepts;
  * Example for Threads and Concurrency by using the Runnable Interface
  */
 
-public class ThreadsExample implements Runnable {
+public class RunnableExample implements Runnable {
 
 	@Override
 	public void run() {
@@ -18,7 +18,7 @@ public class ThreadsExample implements Runnable {
 	
 	public static void main(String[] args) {
 		System.out.println("Start the Threads example");
-		(new Thread(new ThreadsExample())).start(); 
+		(new Thread(new RunnableExample())).start(); 
 		System.out.println("End the Threads example");
 	}
 }
