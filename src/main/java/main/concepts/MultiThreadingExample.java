@@ -1,4 +1,4 @@
-package java.main.concepts;
+package main.concepts;
 /**
  * Created by icorda on 18/07/2016.
  */

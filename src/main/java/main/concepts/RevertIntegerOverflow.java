@@ -1,4 +1,4 @@
-package java.main.concepts;
+package main.concepts;
 /**
  * Created by ilariacorda on 02/07/2017.
  * Java Software to revert an integer that also deals with overflown integers

@@ -1,4 +1,4 @@
-package java.main.concepts;
+package main.concepts;
 import java.util.Arrays;
 
 public class InsertionSortAlgorithm {

@@ -1,4 +1,4 @@
-package java.main.concepts;
+package main.concepts;
 public class Cat 
 {
 	
