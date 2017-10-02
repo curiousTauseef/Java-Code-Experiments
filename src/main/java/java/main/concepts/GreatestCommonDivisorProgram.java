@@ -1,3 +1,4 @@
+package java.main.concepts;
 import java.util.*;
 
 public class GreatestCommonDivisorProgram 
