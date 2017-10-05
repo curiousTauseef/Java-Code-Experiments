@@ -1,6 +1,6 @@
 package main.concepts.tests;
 
-import main.concepts.StringManipulation;
+import main.concepts.tutorial.StringManipulation;
 
 public class StringManipulationTests {
 	
