@@ -108,6 +108,10 @@ public class View extends JFrame implements ActionListener {
 		gc.fill = GridBagConstraints.NONE;
 
 		add(okButton, gc);
+		
+		/*
+		 * We are adding a listener 
+		 */
 
 		okButton.addActionListener(this);
 

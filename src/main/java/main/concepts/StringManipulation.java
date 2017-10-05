@@ -39,7 +39,7 @@ public class StringManipulation {
 	public static String middleThree(String str) {
 		String result = str;
 		if (str.length() >= 3) {
-			//In integer division the divider is dropped
+			//In integer division the divider is dropped 
 			int middleValue = str.length()/2;  
 			result = str.substring(middleValue-1, middleValue+2);
 		}

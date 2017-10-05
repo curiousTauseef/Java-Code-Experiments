@@ -19,6 +19,12 @@ public class Controller implements LoginListener {
 		this.view = view;
 		this.model = model;
 	}
+	
+	/*
+	 * (non-Javadoc)
+	 * @see design.patterns.examples.view.LoginListener#loginPerformed(design.patterns.examples.view.LoginFormEvent)
+	 * This is going to be my subject of the observer pattern
+	 */
 
 	@Override
 	public void loginPerformed(LoginFormEvent event) {
