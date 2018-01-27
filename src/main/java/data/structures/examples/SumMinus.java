@@ -1,4 +1,4 @@
-package main.concepts.tutorial;
+package data.structures.examples;
 
 public class SumMinus {
 	

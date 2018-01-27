@@ -1,4 +1,4 @@
-package main.concepts.tutorial;
+package data.structures.examples;
 
 /*
  * In the below example, the dog can only bark between 
