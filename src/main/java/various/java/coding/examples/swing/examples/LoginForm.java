@@ -5,6 +5,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Taken from: http://www.oodlestechnologies.com/blogs/Create-login-form-in-Java-using-Swing
+ * and with some initial minor changes to be taken further
+ */
+
 public class LoginForm extends JFrame implements ActionListener{
 
     JLabel l1, l2, l3;
