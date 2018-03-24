@@ -47,7 +47,7 @@ public class OracleDB_DAO implements OracleDB_DAO_Interface {
 	 * @see oracledb.connection.dao.OracleDB_DAO_Interface1#openConnection()
 	 */
 	@Override
-	public void openConnection() throws SQLException {
+	public void openConnection() {
 
 		// get the connection to the database
 		System.out.println("Establishing the Connection to the Database");
@@ -87,7 +87,7 @@ public class OracleDB_DAO implements OracleDB_DAO_Interface {
 		String sql = SAMPLE_SELECT_QUERY;
 		// execute the query
 		ResultSet rs = stmt.executeQuery(sql);
-		System.out.println("This print the ResultSet for getPlanByMSISD " + rs);
+		System.out.println("This print the ResultSet " + rs);
 		@SuppressWarnings("unused")
 		PrintWriter csvWriter = new PrintWriter(new File("sample.csv"));
 
@@ -101,7 +101,7 @@ public class OracleDB_DAO implements OracleDB_DAO_Interface {
 	 * @see oracledb.connection.dao.OracleDB_DAO_Interface1#getDBCurrentTime()
 	 */
 	@Override
-	public String getDBCurrentTime() throws SQLException, IOException {
+	public String getDBCurrentTime() throws SQLException {
 		String dateTime = null;
 		// create the prepared stmt
 		Statement stmt = connection.createStatement();
